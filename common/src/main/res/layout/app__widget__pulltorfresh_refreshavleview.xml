@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pull_to_refresh_head"
+    android:layout_width="fill_parent"
+    android:layout_height="60dip">
+
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="120dp"
+        android:src="@drawable/arrow"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="110dp"
+        android:visibility="gone"
+        tools:ignore="RtlHardcoded" />
+
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/pull_to_refresh"
+        tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/updated_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/updated_at" />
+
+</RelativeLayout>

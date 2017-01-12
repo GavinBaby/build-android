@@ -1,0 +1,58 @@
+apply plugin: 'com.android.library'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+task makeJar(type: Copy) {
+    delete 'build/libs/facebook.jar'
+    from('build/intermediates/bundles/release/')
+    into('build/libs/')
+    include('classes.jar')
+    rename ('classes.jar', 'facebook.jar')
+}
+
+
+makeJar.dependsOn(build) //在终端执行生成JAR包
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.mcxiaoke.volley:library:1.0.18'
+    compile 'com.squareup.okhttp:okhttp:2.5.0'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.5.0'
+    compile 'com.facebook.fresco:fresco:0.7.0'
+    compile('org.apache.thrift:libthrift:0.9.3') {
+        exclude module: 'httpclient'
+    }
+    compile 'org.slf4j:slf4j-api:1.6.1'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.6.1'
+//    compile files('libs/open_sdk_r5276.jar')
+//    compile files('libs/weiboSDKCore_3.1.2.jar')
+//    compile files('libs/libammsdk.jar')
+}

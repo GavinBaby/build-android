@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="login_head">#f9f9f9</color>
+    <color name="login_font">#323232</color>
+    <color name="holo_blue">#FF33E5B5</color>
+    <color name="normal_day">#ff999999</color>
+    <color name="selected_day_background">#E75F49</color>
+    <color name="selected_day_text">#fff2f2f2</color>
+    <color name="color_F15353">#F15353</color>
+
+
+    <color name="circle_background">#fff2f2f2</color>
+    <color name="line_background">#ffcccccc</color>
+    <color name="done_text_color_normal">#ff333333</color>
+    <color name="done_text_color_disabled">#ffcccccc</color>
+    <color name="blue">#ff33b5e5</color>
+    <color name="darker_blue">#ff0099cc</color>
+    <color name="date_picker_text_normal">#ff999999</color>
+    <color name="calendar_header">#ff999999</color>
+    <color name="date_picker_view_animator">#fff2f2f2</color>
+
+    <color name="ampm_text_color">#8c8c8c</color>
+    <color name="numbers_text_color">#8c8c8c</color>
+    <color name="refresh__color">#999999</color>
+    <color name="transparent_black">#7F000000</color>
+
+    <color name="cxd_green">#ff6EC850</color>
+    <color name="calender_bg">#F0F0F0</color>
+    <color name="day_no_bg">#EBEBEB</color>
+
+    <color name="black">#000000</color>
+    <color name="line_colour">#dcdcdc</color>
+    <color name="gray">#f0f0f0</color>
+    <color name="white">#ffffffff</color>
+    <color name="grayness">#20000000</color>
+
+
+</resources>
