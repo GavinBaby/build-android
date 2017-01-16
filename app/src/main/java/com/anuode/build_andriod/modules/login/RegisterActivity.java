@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.anuode.build_andriod.Build;
 import com.anuode.build_andriod.R;
+import com.anuode.build_andriod.modules.util.RegexUtil;
 import com.anuode.build_andriod.modules.util.TimeCountUtil;
 import com.anuode.build_andriod.thrift.Account;
 import com.anuode.build_andriod.thrift.Back;
@@ -66,13 +67,13 @@ public class RegisterActivity extends ActivityBase implements View.OnClickListen
 
         mPassword = (EditText) findViewById(R.id.register__psw_one);
         mPassword_ = (EditText) findViewById(R.id.register__psw_two);
-        mSpreadCode = (EditText) findViewById(R.id.company_name_edit);
-        mCheckBox = (CheckBox) findViewById(R.id.regist__unagree_img);
-        mConsentLayout = findViewById(R.id.consent);
+//        mSpreadCode = (EditText) findViewById(R.id.company_name_edit);
+//        mCheckBox = (CheckBox) findViewById(R.id.regist__unagree_img);
+//        mConsentLayout = findViewById(R.id.consent);
         mRegister_BTN = (Button) findViewById(R.id.register_btn);
         mCodeCountdown = (TextView) findViewById(R.id.register__get_verify);
         mBack = ((ImageView) findViewById(R.id.login__back));
-        mLink = (TextView) findViewById(R.id.regist__deal_link);
+//        mLink = (TextView) findViewById(R.id.regist__deal_link);
 
         mConsentLayout.setOnClickListener(this);
         mRegister_BTN.setOnClickListener(this);
@@ -195,19 +196,19 @@ public class RegisterActivity extends ActivityBase implements View.OnClickListen
         account.setMobile(mobile);
         account.setPassword(password);
         try {
-            Txjc.getClient().loginAgent(account, new TAsyncMethodResult<CreateResult>() {
+            Build.getClient().login(account, new TAsyncMethodResult<Account>() {
                 @Override
-                public void onResult(Exception e, CreateResult result) {
+                public void onResult(Exception e, Account result) {
                     if (result == null) {
                         Toast.makeText(RegisterActivity.this, e.toString(), Toast.LENGTH_LONG).show();
                         return;
                     }
-                    Preferences.setLoginUsername(mobile);
-                    Preferences.setLoginPassword(password);
+//                    Preferences.setLoginUsername(mobile);
+//                    Preferences.setLoginPassword(password);
                     ActivityManager.getInstance().setLogoutFlag(false);
-                    Intent intent = new Intent(RegisterActivity.this.getApplicationContext(), GuideAgentActivity.class);
-                    startActivity(intent);
-                    Txjc.cache.put("agentMessage", result.getAgent());
+//                    Intent intent = new Intent(RegisterActivity.this.getApplicationContext(), GuideAgentActivity.class);
+//                    startActivity(intent);
+                    Build.cache.put("userinfo", result);
                     finish();
                 }
             });

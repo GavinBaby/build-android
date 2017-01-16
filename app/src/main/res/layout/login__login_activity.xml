@@ -12,7 +12,7 @@
 
         <include
             android:id="@+id/login__login"
-            layout="@layout/login__head" />
+            layout="@layout/common__head" />
 
         <LinearLayout
             android:id="@+id/login__user_input"

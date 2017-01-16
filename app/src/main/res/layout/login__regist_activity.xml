@@ -69,87 +69,61 @@
 
     </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/company_name"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_below="@+id/register__pwd_layout"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/login__round_rect">
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/company_name"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="55dp"-->
+        <!--android:layout_below="@+id/register__pwd_layout"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:background="@drawable/login__round_rect">-->
 
+    <!--</RelativeLayout>-->
 
-        <EditText
-            android:id="@+id/company_name_edit"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="25dp"
-            android:background="@null"
-            android:gravity="center_vertical"
-            android:hint="@string/register__company_name"
-            android:singleLine="true"
-            android:textColor="@color/color_323232"
-            android:textColorHint="@color/color_323232"
-            android:textSize="13sp"
-            tools:ignore="Deprecated,RtlHardcoded" />
-        <TextView
-            android:id="@+id/company_name_desc"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="255dp"
-            android:background="@null"
-            android:gravity="center_vertical"
-            android:hint="@string/register__company_name_desc"
-            android:singleLine="true"
-            android:textSize="13sp"
-            android:textColorHint="@color/color_999999"
-            tools:ignore="Deprecated,RtlHardcoded" />
-    </RelativeLayout>
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/consent"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/company_name"-->
+        <!--android:layout_marginTop="18dp">-->
 
-    <RelativeLayout
-        android:id="@+id/consent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/company_name"
-        android:layout_marginTop="18dp">
+        <!--&lt;!&ndash;<CheckBox&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/regist__unagree_img"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="17dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="17dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginLeft="20dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@drawable/login__box_checkbox_selector"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:button="@null" />&ndash;&gt;-->
 
-        <CheckBox
-            android:id="@+id/regist__unagree_img"
-            android:layout_width="17dp"
-            android:layout_height="17dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/login__box_checkbox_selector"
-            android:button="@null" />
-
-        <TextView
-            android:id="@+id/regist__deal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="38dp"
-            android:layout_centerVertical="true"
-            android:singleLine="true"
-            android:text="@string/regist__deal"
-            android:textColor="@color/color_323232"
-            android:textSize="12sp"
-            tools:ignore="RtlHardcoded" />
-        <TextView
-            android:id="@+id/regist__deal_link"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/regist__deal"
-            android:singleLine="true"
-            android:textColor="@color/color_c9a063"
-            android:text="@string/regist__deal_link"
-            android:textSize="12sp"
-            tools:ignore="RtlHardcoded" />
-    </RelativeLayout>
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/regist__deal"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginLeft="38dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:singleLine="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="@string/regist__deal"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="@color/color_323232"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="12sp"&ndash;&gt;-->
+            <!--&lt;!&ndash;tools:ignore="RtlHardcoded" />&ndash;&gt;-->
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/regist__deal_link"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_toRightOf="@+id/regist__deal"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:singleLine="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="@color/color_c9a063"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="@string/regist__deal_link"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="12sp"&ndash;&gt;-->
+            <!--&lt;!&ndash;tools:ignore="RtlHardcoded" />&ndash;&gt;-->
+    <!--</RelativeLayout>-->
 
     <Button
         android:id="@+id/register_btn"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:layout_below="@+id/company_name"
+        android:layout_below="@+id/register__pwd_layout"
         android:layout_centerInParent="true"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"

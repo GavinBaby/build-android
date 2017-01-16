@@ -7,7 +7,8 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.txjc.app.R;
+import com.anuode.build_andriod.R;
+
 
 public class DialogUtil {
     /**

@@ -39,15 +39,5 @@
         android:textColor="@color/login_font"
         android:textSize="17dp" />
 
-    <Button
-        android:id="@+id/account__agent_nick_submit"
-        android:text="编辑"
-        android:textColor="@color/white"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="20dp"
-        android:layout_centerVertical="true"
-        android:visibility="gone"
-        android:background="@drawable/product_price_bottom_clearing"
-        android:layout_width="70dp"
-        android:layout_height="33dp" />
+
 </RelativeLayout>

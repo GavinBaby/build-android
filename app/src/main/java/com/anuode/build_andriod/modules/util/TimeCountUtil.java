@@ -9,8 +9,6 @@ import android.text.SpannableString;
 import android.widget.TextView;
 
 import com.anuode.common.net.thrift.TAsyncMethodResult;
-import com.txjc.app.Txjc;
-import com.txjc.app.thrift.Back;
 
 public class TimeCountUtil extends CountDownTimer {
     private Activity mActivity;
@@ -45,11 +43,11 @@ public class TimeCountUtil extends CountDownTimer {
     }
 
     public static void SendVerifyCode(String mobile) throws Exception {
-        Txjc.getClient().getMobilesSendVerifyCode(mobile, new TAsyncMethodResult<Back>() {
-            @Override
-            public void onResult(Exception e, Back back) {
-                super.onResult(e, back);
-            }
-        });
+//        Txjc.getClient().getMobilesSendVerifyCode(mobile, new TAsyncMethodResult<Back>() {
+//            @Override
+//            public void onResult(Exception e, Back back) {
+//                super.onResult(e, back);
+//            }
+//        });
     }
 }
