@@ -3,4 +3,59 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="txjc_323232">#323232</color>
+
+    <color name="color_e2ba72">#e2ba72</color>
+    <color name="color_f9f9f9">#f9f9f9</color>
+    <color name="login_font">#323232</color>
+    <color name="holo_blue">#FF33E5B5</color>
+    <color name="normal_day">#ff999999</color>
+    <color name="selected_day_background">#E75F49</color>
+    <color name="selected_day_text">#fff2f2f2</color>
+
+
+    <color name="circle_background">#fff2f2f2</color>
+    <color name="line_background">#ffcccccc</color>
+    <color name="done_text_color_normal">#ff333333</color>
+    <color name="done_text_color_disabled">#ffcccccc</color>
+    <color name="blue">#ff33b5e5</color>
+    <color name="darker_blue">#ff0099cc</color>
+    <color name="date_picker_text_normal">#ff999999</color>
+    <color name="calendar_header">#ff999999</color>
+    <color name="date_picker_view_animator">#fff2f2f2</color>
+
+    <color name="ampm_text_color">#8c8c8c</color>
+    <color name="numbers_text_color">#8c8c8c</color>
+    <color name="transparent_black">#7F000000</color>
+
+    <color name="cxd_green">#ff6EC850</color>
+    <color name="calender_bg">#F0F0F0</color>
+    <color name="day_no_bg">#EBEBEB</color>
+
+    <color name="black">#000000</color>
+    <color name="line_colour">#dcdcdc</color>
+    <color name="gray">#f0f0f0</color>
+    <color name="white">#ffffffff</color>
+    <color name="grayness">#20000000</color>
+
+    <color name="red">#E51A1A</color>
+    <color name="black_44">#444444</color>
+    <color name="white_f8">#F8fffB</color>
+    <!-- OS使用 共通 START 以上有重复，请自行整理-->
+    <color name="color_f0f0f0">#f0f0f0</color>
+    <color name="color_323232">#323232</color>
+    <color name="color_dcdcdc">#dcdcdc</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="color_c9a063">#c9a063</color>
+    <color name="color_00000000">#00000000</color>
+    <color name="color_AEAEAE">#AEAEAE</color>
+    <color name="color_ff0000">#ff0000</color>
+    <color name="color_c9a083">#c9a083</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_ca0915">#ca0915</color>
+    <color name="color_1d1d1d">#1d1d1d</color>
+    <color name="color_98ffffff">#98ffffff</color>
+    <color name="color_E51A1A">#E51A1A</color>
+    <!-- OS使用 共通 END-->
 </resources>

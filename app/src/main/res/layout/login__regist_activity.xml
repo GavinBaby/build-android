@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dcdcdc">
+
+    <include
+        android:id="@+id/login__login"
+        layout="@layout/common__head" />
+
+    <include
+        android:id="@+id/login__pwd_regist_item"
+        layout="@layout/login__psw_regist_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login__login" />
+
+    <RelativeLayout
+        android:id="@+id/register__psw_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/login__pwd_regist_item"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login__round_rect">
+        <EditText
+            android:id="@+id/register__psw_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/register__psw"
+            android:maxLength="20"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="@color/color_323232"
+            android:textColorHint="@color/color_323232"
+            android:textSize="13sp"
+            tools:ignore="Deprecated,RtlHardcoded" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/register__pwd_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/register__psw_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login__round_rect">
+        <EditText
+            android:id="@+id/register__psw_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/register__pwd"
+            android:maxLength="20"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="@color/color_323232"
+            android:textColorHint="@color/color_323232"
+            android:textSize="13sp"
+            tools:ignore="Deprecated,RtlHardcoded" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/company_name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/register__pwd_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login__round_rect">
+
+
+        <EditText
+            android:id="@+id/company_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/register__company_name"
+            android:singleLine="true"
+            android:textColor="@color/color_323232"
+            android:textColorHint="@color/color_323232"
+            android:textSize="13sp"
+            tools:ignore="Deprecated,RtlHardcoded" />
+        <TextView
+            android:id="@+id/company_name_desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="255dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/register__company_name_desc"
+            android:singleLine="true"
+            android:textSize="13sp"
+            android:textColorHint="@color/color_999999"
+            tools:ignore="Deprecated,RtlHardcoded" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/consent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/company_name"
+        android:layout_marginTop="18dp">
+
+        <CheckBox
+            android:id="@+id/regist__unagree_img"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/login__box_checkbox_selector"
+            android:button="@null" />
+
+        <TextView
+            android:id="@+id/regist__deal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38dp"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="@string/regist__deal"
+            android:textColor="@color/color_323232"
+            android:textSize="12sp"
+            tools:ignore="RtlHardcoded" />
+        <TextView
+            android:id="@+id/regist__deal_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/regist__deal"
+            android:singleLine="true"
+            android:textColor="@color/color_c9a063"
+            android:text="@string/regist__deal_link"
+            android:textSize="12sp"
+            tools:ignore="RtlHardcoded" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/company_name"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/login__login_selector"
+        android:text="@string/register__registers"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

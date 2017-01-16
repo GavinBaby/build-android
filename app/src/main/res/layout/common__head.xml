@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/login_head">
+
+    <RelativeLayout
+        android:id="@+id/common__back"
+        android:layout_width="50dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:src="@drawable/login__back"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/login__back"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:background="@null"
+        android:src="@drawable/login__back"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:singleLine="true"
+        android:text="@string/login__login"
+        android:textColor="@color/login_font"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/account__agent_nick_submit"
+        android:text="编辑"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:background="@drawable/product_price_bottom_clearing"
+        android:layout_width="70dp"
+        android:layout_height="33dp" />
+</RelativeLayout>

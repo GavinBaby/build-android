@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dcdcdc"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/login__login"
+        layout="@layout/login__head" />
+
+    <include
+        android:id="@+id/login__pwd_regist_item"
+        layout="@layout/login__psw_regist_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login__login" />
+
+
+    <Button
+        android:id="@+id/forget_pwd_btn_one"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/login__login_selector"
+        android:text="@string/password_reset"
+        android:textColor="@color/color_ffffff"
+        android:textSize="16sp" />
+
+</RelativeLayout>

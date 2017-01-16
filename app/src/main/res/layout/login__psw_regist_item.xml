@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dcdcdc"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/register__phone_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/login__round_rect">
+
+
+        <EditText
+            android:id="@+id/register__num_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/register__num_edit"
+            android:singleLine="true"
+            android:textSize="13sp"
+            android:textColor="@color/color_323232"
+            android:textColorHint="@color/color_323232"
+            tools:ignore="Deprecated,RtlHardcoded" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/register__Verify_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/register__phone_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login__round_rect">
+
+
+        <EditText
+            android:id="@+id/register__Verify_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/register__Verify_edit"
+            android:singleLine="true"
+            android:textColor="@color/color_323232"
+            android:textColorHint="@color/color_323232"
+            android:textSize="13sp"
+            tools:ignore="Deprecated,RtlHardcoded"  />
+
+        <View
+            android:id="@+id/regist__vline"
+            android:layout_width="0.5dp"
+            android:layout_height="31dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:layout_toLeftOf="@+id/register__get_verify"
+            android:background="@drawable/sheet_line"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/register__get_verify"
+            android:layout_width="92dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/register__get_verify"
+            android:textColor="@color/color_c9a063"
+            android:textSize="12dp"
+            android:visibility="visible"
+            tools:ignore="RtlHardcoded" />
+    </RelativeLayout>
+
+</RelativeLayout>
