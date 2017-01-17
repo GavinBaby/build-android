@@ -65,12 +65,15 @@ public class LoginActivity extends ActivityBase {
     }
 
     public void authSvc() {
-        if (!(checkName() && checkpsw())) {
-            return;
-        }
+//        if (!(checkName() && checkpsw())) {
+//            return;
+//        }
         Account account = new Account();
-        account.setMobile(mLoginUserName.getText().toString());
-        account.setPassword(mLoginPWD.getText().toString());
+//        account.setMobile(mLoginUserName.getText().toString());
+//        account.setPassword(mLoginPWD.getText().toString());
+        account.setMobile("15657820119");
+        account.setPassword("123123");
+        account.setType("2");
         try {
             Build.getClient().login(account, new TAsyncMethodResult<Account>() {
                 @Override

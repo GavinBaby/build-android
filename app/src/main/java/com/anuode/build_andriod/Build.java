@@ -8,8 +8,8 @@ import java.util.Map;
 public class Build extends ApplicationBase {
 
     //begin 全局变量
-    public static final String HOST = "http://127.0.0.1/build";
-    public static final String FILEHOST = "http://127.0.0.1/";
+    public static final String HOST = "http://192.168.1.104/build";
+    public static final String FILEHOST = "http://192.168.1.104/";
     public static final Map cache = new HashMap<>();
     //end 全局变量
 

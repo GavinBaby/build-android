@@ -20,7 +20,6 @@ import java.util.TimerTask;
 
 public class WelcomeActivity extends ActivityBase {
 
-    private SimpleDraweeView mSimpleDraweeView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
