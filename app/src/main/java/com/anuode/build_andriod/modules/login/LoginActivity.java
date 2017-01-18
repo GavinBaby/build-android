@@ -88,10 +88,10 @@ public class LoginActivity extends ActivityBase {
                         Preferences.setLoginPassword(mLoginPWD.getText().toString());
                         ActivityManager.getInstance().setLogoutFlag(false);
                         Intent intent = new Intent(LoginActivity.this.getApplicationContext(), MainActivity.class);
-                        startActivity(intent);
+//                        startActivity(intent);
                         Build.cache.put("userinfo", result);
                         Toast.makeText(LoginActivity.this, result.getBack().getText(), Toast.LENGTH_SHORT).show();
-                        finish();
+//                        finish();
                         ((InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE)).hideSoftInputFromWindow(LoginActivity.this.getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
                     }else{
                         Toast.makeText(LoginActivity.this, result.getBack().getText(), Toast.LENGTH_SHORT).show();

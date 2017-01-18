@@ -519,7 +519,7 @@ public class buildSvc {
     }
 
     public void create(Account account, org.apache.thrift.async.AsyncMethodCallback resultHandler) throws org.apache.thrift.TException {
-      checkReady();
+      
       create_call method_call = new create_call(account, resultHandler, this, ___protocolFactory, ___transport);
       this.___currentMethod = method_call;
       ___manager.call(method_call);
@@ -551,7 +551,7 @@ public class buildSvc {
     }
 
     public void login(Account account, org.apache.thrift.async.AsyncMethodCallback resultHandler) throws org.apache.thrift.TException {
-      checkReady();
+      
       login_call method_call = new login_call(account, resultHandler, this, ___protocolFactory, ___transport);
       this.___currentMethod = method_call;
       ___manager.call(method_call);
@@ -583,7 +583,7 @@ public class buildSvc {
     }
 
     public void getMenu(String seq_no, org.apache.thrift.async.AsyncMethodCallback resultHandler) throws org.apache.thrift.TException {
-      checkReady();
+      
       getMenu_call method_call = new getMenu_call(seq_no, resultHandler, this, ___protocolFactory, ___transport);
       this.___currentMethod = method_call;
       ___manager.call(method_call);
@@ -615,7 +615,7 @@ public class buildSvc {
     }
 
     public void findBuilds(Build build, Page page, org.apache.thrift.async.AsyncMethodCallback resultHandler) throws org.apache.thrift.TException {
-      checkReady();
+      
       findBuilds_call method_call = new findBuilds_call(build, page, resultHandler, this, ___protocolFactory, ___transport);
       this.___currentMethod = method_call;
       ___manager.call(method_call);
@@ -650,7 +650,7 @@ public class buildSvc {
     }
 
     public void findComments(Comment comment, Page page, org.apache.thrift.async.AsyncMethodCallback resultHandler) throws org.apache.thrift.TException {
-      checkReady();
+      
       findComments_call method_call = new findComments_call(comment, page, resultHandler, this, ___protocolFactory, ___transport);
       this.___currentMethod = method_call;
       ___manager.call(method_call);
@@ -685,7 +685,7 @@ public class buildSvc {
     }
 
     public void findNotices(Notice notice, Page page, org.apache.thrift.async.AsyncMethodCallback resultHandler) throws org.apache.thrift.TException {
-      checkReady();
+      
       findNotices_call method_call = new findNotices_call(notice, page, resultHandler, this, ___protocolFactory, ___transport);
       this.___currentMethod = method_call;
       ___manager.call(method_call);
@@ -720,7 +720,7 @@ public class buildSvc {
     }
 
     public void findSorts(Sort sort, Page page, org.apache.thrift.async.AsyncMethodCallback resultHandler) throws org.apache.thrift.TException {
-      checkReady();
+      
       findSorts_call method_call = new findSorts_call(sort, page, resultHandler, this, ___protocolFactory, ___transport);
       this.___currentMethod = method_call;
       ___manager.call(method_call);
@@ -755,7 +755,7 @@ public class buildSvc {
     }
 
     public void findPics(Pic pic, Page page, org.apache.thrift.async.AsyncMethodCallback resultHandler) throws org.apache.thrift.TException {
-      checkReady();
+      
       findPics_call method_call = new findPics_call(pic, page, resultHandler, this, ___protocolFactory, ___transport);
       this.___currentMethod = method_call;
       ___manager.call(method_call);
@@ -790,7 +790,7 @@ public class buildSvc {
     }
 
     public void findAccounts(Account account, Page page, org.apache.thrift.async.AsyncMethodCallback resultHandler) throws org.apache.thrift.TException {
-      checkReady();
+      
       findAccounts_call method_call = new findAccounts_call(account, page, resultHandler, this, ___protocolFactory, ___transport);
       this.___currentMethod = method_call;
       ___manager.call(method_call);
@@ -825,7 +825,7 @@ public class buildSvc {
     }
 
     public void findBuild(String id, org.apache.thrift.async.AsyncMethodCallback resultHandler) throws org.apache.thrift.TException {
-      checkReady();
+      
       findBuild_call method_call = new findBuild_call(id, resultHandler, this, ___protocolFactory, ___transport);
       this.___currentMethod = method_call;
       ___manager.call(method_call);
@@ -857,7 +857,7 @@ public class buildSvc {
     }
 
     public void findComment(String id, org.apache.thrift.async.AsyncMethodCallback resultHandler) throws org.apache.thrift.TException {
-      checkReady();
+      
       findComment_call method_call = new findComment_call(id, resultHandler, this, ___protocolFactory, ___transport);
       this.___currentMethod = method_call;
       ___manager.call(method_call);
@@ -889,7 +889,7 @@ public class buildSvc {
     }
 
     public void findNotice(String id, org.apache.thrift.async.AsyncMethodCallback resultHandler) throws org.apache.thrift.TException {
-      checkReady();
+      
       findNotice_call method_call = new findNotice_call(id, resultHandler, this, ___protocolFactory, ___transport);
       this.___currentMethod = method_call;
       ___manager.call(method_call);
@@ -921,7 +921,7 @@ public class buildSvc {
     }
 
     public void findSort(String name, org.apache.thrift.async.AsyncMethodCallback resultHandler) throws org.apache.thrift.TException {
-      checkReady();
+      
       findSort_call method_call = new findSort_call(name, resultHandler, this, ___protocolFactory, ___transport);
       this.___currentMethod = method_call;
       ___manager.call(method_call);
@@ -953,7 +953,7 @@ public class buildSvc {
     }
 
     public void findPic(String id, org.apache.thrift.async.AsyncMethodCallback resultHandler) throws org.apache.thrift.TException {
-      checkReady();
+      
       findPic_call method_call = new findPic_call(id, resultHandler, this, ___protocolFactory, ___transport);
       this.___currentMethod = method_call;
       ___manager.call(method_call);
@@ -985,7 +985,7 @@ public class buildSvc {
     }
 
     public void saveBuild(Build build, org.apache.thrift.async.AsyncMethodCallback resultHandler) throws org.apache.thrift.TException {
-      checkReady();
+      
       saveBuild_call method_call = new saveBuild_call(build, resultHandler, this, ___protocolFactory, ___transport);
       this.___currentMethod = method_call;
       ___manager.call(method_call);
