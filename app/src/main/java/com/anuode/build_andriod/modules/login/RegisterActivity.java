@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,11 +35,11 @@ public class RegisterActivity extends ActivityBase implements View.OnClickListen
     private EditText mAuthCode;//验证码
     private EditText mPassword;//密码
     private EditText mPassword_;//确认密码
-    private EditText mSpreadCode;//推广码
-    private CheckBox mCheckBox;//同意协议的对勾
-    private View mConsentLayout;//同意协议点击范围
+//    private EditText mSpreadCode;//推广码
+//    private CheckBox mCheckBox;//同意协议的对勾
+//    private View mConsentLayout;//同意协议点击范围
     private Button mRegister_BTN;//注册并登录按钮
-    private ImageView mBack;//返回按钮
+    private RelativeLayout mBack;//返回按钮
 
     private TextView mCodeCountdown;//验证码倒计时
 
@@ -72,15 +73,15 @@ public class RegisterActivity extends ActivityBase implements View.OnClickListen
 //        mConsentLayout = findViewById(R.id.consent);
         mRegister_BTN = (Button) findViewById(R.id.register_btn);
         mCodeCountdown = (TextView) findViewById(R.id.register__get_verify);
-        mBack = ((ImageView) findViewById(R.id.login__back));
+        mBack = ((RelativeLayout) findViewById(R.id.common__back));
 //        mLink = (TextView) findViewById(R.id.regist__deal_link);
 
-        mConsentLayout.setOnClickListener(this);
+//        mConsentLayout.setOnClickListener(this);
         mRegister_BTN.setOnClickListener(this);
-        mCheckBox.setOnClickListener(this);
+//        mCheckBox.setOnClickListener(this);
         mBack.setOnClickListener(this);
         mCodeCountdown.setOnClickListener(this);
-        mLink.setOnClickListener(this);
+//        mLink.setOnClickListener(this);
     }
 
     //判断手机
@@ -139,10 +140,10 @@ public class RegisterActivity extends ActivityBase implements View.OnClickListen
         if (!(checkName() && checkCode() && checkPwd())) {
             return;
         }
-        if (!mCheckBox.isChecked()) {
-            Toast.makeText(RegisterActivity.this, R.string.register__disagree_deal, Toast.LENGTH_SHORT).show();
-            return;
-        }
+//        if (!mCheckBox.isChecked()) {
+//            Toast.makeText(RegisterActivity.this, R.string.register__disagree_deal, Toast.LENGTH_SHORT).show();
+//            return;
+//        }
         try {
             checkVerificationCode();
         } catch (Exception e) {
@@ -220,7 +221,7 @@ public class RegisterActivity extends ActivityBase implements View.OnClickListen
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.login__back:
+            case R.id.common__back:
                 Intent intent1 = new Intent(RegisterActivity.this.getApplicationContext(), LoginActivity.class);
                 startActivity(intent1);
                 finish();

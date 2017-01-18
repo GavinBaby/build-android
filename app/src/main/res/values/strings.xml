@@ -73,14 +73,6 @@
     <string name="photograph">拍照</string>
     <string name="photo_album">从相册中选择</string>
 
-    <string name="account__user_center">用户中心</string>
-    <string name="alter_name">修改姓名</string>
-    <string name="import_name">请您输入姓名</string>
-    <string name="alter_merchant_name">商户名称修改</string>
-    <string name="import_merchant_name">请输入商户名</string>
-
-    <string name="no_delivery_address">还没有收货地址哦~</string>
-    <string name="add_delivery_address">添加地址</string>
     <string name="modify__succed">修改成功！</string>
     <string name="modify__fail">修改失败！</string>
     <string name="consignee">收件人</string>
@@ -91,71 +83,7 @@
     <string name="detailed_address">输入详细收货地址</string>
     <string name="address">详细地址</string>
     <string name="hold">保存</string>
-    <string name="default_address">默认地址</string>
     <string name="delete">删除</string>
-    <string name="shop_name">商铺名</string>
-    <string name="import_shop_name">请输入店铺名</string>
-    <string name="addressee_site">收货地址</string>
-
-    <string name="order_money">订单金额\t:</string>
-    <string name="money_symbol">￥</string>
-    <string name="alipy">支付宝</string>
-    <string name="nionpay">银联支付</string>
-    <string name="cash_on_delivery">货到付款</string>
-    <string name="total_amount">总额\t:</string>
-    <string name="confirm_pay">确定支付</string>
-
-    <string name="jin_yuan">元/斤</string>
-    <string name="annotation">注\t:\t本产品支持货到付款</string>
-    <string name="yuan">元</string>
-
-    <string name="empty">清空菜篮子</string>
-    <string name="delivery_date">送达的时间\t:</string>
-    <string name="ready">菜篮子已经准备就绪咯~</string>
-
-    <string name="wnp">网农批</string>
-    <string name="next_step">下一步</string>
-    <string name="go_approval">去审批</string>
-
-
-    <string name="amend_address">修改地址</string>
-    <string name="beijing">北京</string>
-    <string name="yuan_jin">元/斤</string>
-    <string name="product_standard">株高：</string>
-    <string name="member_top_title">成员管理</string>
-    <string name="name_zero">姓名不能为空</string>
-    <string name="my_order_top_title">我的订单</string>
-    <string name="order_approval_top_title">订单审批</string>
-    <string name="order_confirm_top_title">订单确认</string>
-    <string name="order_details_top_title">订单详情</string>
-    <string name="order_pay_top_title">结算信息</string>
-    <string name="order__num">订  单  号：</string>
-    <string name="order__time">下单时间：</string>
-    <string name="order__men">下  单  人：</string>
-    <string name="order__condition">订单状态：</string>
-    <string name="approval__condition">审批状态：</string>
-    <string name="give_time">送达时间：</string>
-    <string name="logistics_condition">物流状态：</string>
-    <string name="product_name">产品名称</string>
-    <string name="product_price">单价</string>
-    <string name="product_num">数量</string>
-    <string name="order_number">订单号：</string>
-    <string name="order_men">下\t单\t人\t：</string>
-    <string name="order__money">下 单 金 额\t：</string>
-    <string name="pay_time">下 单 时 间 ：</string>
-    <string name="give__time">送 达 时 间\t：</string>
-    <string name="not_approvals">不予审批</string>
-    <string name="go_pay">去付款</string>
-    <string name="add_adresss">添加收货地址</string>
-    <string name="total">合计</string>
-    <string name="pay">实付款：</string>
-    <string name="add_product">添加商品</string>
-    <string name="surplus_time">剩余支付时间：</string>
-    <string name="minute">分钟</string>
-    <string name="go__pay">去支付</string>
-    <string name="same_again">再来一份</string>
-    <string name="search__product">搜索农产\t\t如：红薯</string>
-    <string name="leave">离开</string>
 
     <string name="pull_to_refresh">下拉可以刷新</string>
     <string name="release_to_refresh">释放立即刷新</string>
@@ -179,10 +107,11 @@
 
     <string name="back">返回</string>
     <string name="personal_center">个人中心</string>
-    <string name="icon">头像</string>
-    <string name="real_name">代理商昵称</string>
+    <string name="icon">我的头像</string>
+    <string name="real_name">我的昵称</string>
     <string name="user_name">用户名</string>
-    <string name="change_password">登录密码</string>
+    <string name="about_me">关于我们</string>
+    <string name="change_password">修改密码</string>
     <string name="payment_password">支付密码</string>
     <string name="mobile_verification">手机验证</string>
     <string name="amend_gesture_password">修改手势密码</string>

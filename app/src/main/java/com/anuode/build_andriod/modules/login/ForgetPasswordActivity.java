@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,7 +28,7 @@ public class ForgetPasswordActivity extends ActivityBase implements View.OnClick
     private EditText mNumber;//手机号码
     private EditText mAuthCode;//验证码
 
-    private ImageView mBack;//返回按钮
+    private RelativeLayout mBack;//返回按钮
     private TextView mAuthCodeBUT;//验证码按钮
 
     @Override
@@ -51,7 +52,7 @@ public class ForgetPasswordActivity extends ActivityBase implements View.OnClick
         mAuthCode.setFilters(new InputFilter[]{new InputFilter.LengthFilter(6)});
         mAuthCode.setKeyListener(numericOnlyListener);
 
-        mBack = (ImageView) findViewById(R.id.login__back);
+        mBack = (RelativeLayout) findViewById(R.id.common__back);
         mAuthCodeBUT = (TextView) findViewById(R.id.register__get_verify);
 
        /* 设置监听*/
@@ -92,7 +93,7 @@ public class ForgetPasswordActivity extends ActivityBase implements View.OnClick
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.login__back:
+            case R.id.common__back:
                 Intent intent1 = new Intent(ForgetPasswordActivity.this.getApplicationContext(), LoginActivity.class);
                 startActivity(intent1);
                 finish();

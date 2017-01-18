@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dcdcdc"
+    android:orientation="vertical">
+
+    <include layout="@layout/common__head" />
+
+    <RelativeLayout
+        android:id="@+id/mytrip__user_usermod"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="@color/white"
+        android:onClick="onClick">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/color_dcdcdc" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:singleLine="true"
+            android:text="代理商昵称"
+            android:textColor="@color/color_666666"
+            android:textSize="12sp"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/account__agent_apply_s"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_toLeftOf="@+id/reset"
+            android:layout_toRightOf="@+id/username"
+            android:gravity="center_vertical"
+            android:maxLength="20"
+            android:background="@null"
+            android:singleLine="true"
+            android:textColor="@color/color_323232"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/ed_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_toLeftOf="@+id/reset"
+            android:layout_toRightOf="@+id/username"
+            android:maxLength="7"
+            android:background="@null"
+            android:singleLine="true"
+            android:text=""
+            android:hint="请输入昵称"
+            android:textColor="@color/color_323232"
+            android:textColorHint="@color/color_323232"
+            android:textSize="11sp"
+            tools:ignore="RtlHardcoded,TextFields" />
+
+        <ImageView
+            android:id="@+id/reset"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="17dp"
+            android:visibility="gone"
+            android:src="@drawable/account__delete_icon"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/account__contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toLeftOf="@+id/reset"
+        android:layout_toRightOf="@+id/username"
+        android:text="如有疑问请联系客服：13691288595"
+        android:textColor="@color/color_666666"
+        android:textSize="15sp"
+        android:visibility="gone"/>
+</LinearLayout>

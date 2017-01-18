@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="290dp"
+        android:layout_height="177dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/color_ffffff"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:id="@+id/amend_img"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:singleLine="true"
+                android:text="@string/alter_icon"
+                android:textSize="16sp"
+                android:textColor="@color/color_323232"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/color_e2ba72"
+                 />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/photograph"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/amend_img"
+            android:onClick="onClick">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:singleLine="true"
+                android:text="@string/photograph"
+                android:textColor="@color/color_323232"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_dcdcdc"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/photo_album"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/photograph"
+            android:onClick="onClick">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:singleLine="true"
+                android:text="@string/photo_album"
+                android:textColor="@color/color_323232"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_dcdcdc"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/photo_album"
+            android:onClick="onClick">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:singleLine="true"
+                android:text="@string/cancel"
+                android:textColor="@color/color_323232"
+                android:textSize="12sp"
+                tools:ignore="RtlHardcoded" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

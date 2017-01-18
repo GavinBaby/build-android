@@ -18,8 +18,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".modules.login.LoginActivity"/>
         <activity android:name=".modules.index.MainActivity"/>
+        <activity android:name=".modules.login.LoginActivity"/>
+        <activity android:name=".modules.login.RegisterActivity"/>
+        <activity android:name=".modules.login.ForgetPasswordActivity"/>
+        <activity android:name=".modules.account.AboutActivity"/>
+        <activity android:name=".modules.account.AccountActivity"/>
+        <activity android:name=".modules.account.NickActivity"/>
+        <activity android:name=".modules.account.ResetPasswordActivity"/>
     </application>
 
 </manifest>

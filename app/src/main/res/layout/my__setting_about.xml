@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#f0f0f0"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/common__head" />
+
+    <ImageView
+        android:id="@+id/common_about_img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_body_logo_bg"
+        tools:ignore="ContentDescription" />
+    <TextView
+        android:id="@+id/common__version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/common_about_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text=""
+        android:textColor="#323232"
+        android:textSize="12dp" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_foot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/common_about_img"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dcdcdc" />
+
+        <RelativeLayout
+            android:id="@+id/version_updates_layout"
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:layout_height="55dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="版本更新"
+                android:textColor="@color/color_323232"
+                android:textSize="13dp"
+                tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+            <ImageView
+                android:id="@+id/version_arrows_right"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/arrows_right"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/common__version_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/ten"
+                android:layout_toLeftOf="@+id/version_arrows_right"
+                android:tag="update"
+                android:text=""
+                android:textColor="#888888"
+                android:textSize="12sp"
+                tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="#dcdcdc" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/service_tel_layout"
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:layout_height="55dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="客服电话"
+                android:textColor="@color/color_323232"
+                android:textSize="13dp"
+                tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+            <ImageView
+                android:id="@+id/service_arrows_right"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/arrows_right"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/service_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/ten"
+                android:layout_toLeftOf="@+id/service_arrows_right"
+                android:text="13691288595"
+                android:textColor="#c9a063"
+                android:textSize="12sp"
+                tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="#dcdcdc" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

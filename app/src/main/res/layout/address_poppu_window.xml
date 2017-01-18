@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/delete_dialog_bg">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="110dp"
+        android:orientation="vertical"
+        android:background="@drawable/delete_dialog_bg"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <TextView
+                android:id="@+id/common__warn_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="您确定要删除此地址?"
+                android:textColor="#323232"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dcdcdc" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/btn_cancel"
+                android:layout_width="99.5dp"
+                android:layout_height="match_parent"
+                android:textColor="#007aff"
+                android:background="@null"
+                android:gravity="center"
+                android:text="取消"
+                android:textSize="14dp" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#dcdcdc" />
+
+            <TextView
+                android:id="@+id/btn_confirm"
+                android:layout_width="99.5dp"
+                android:layout_height="match_parent"
+                android:textColor="#007aff"
+                android:gravity="center"
+                android:text="确定"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

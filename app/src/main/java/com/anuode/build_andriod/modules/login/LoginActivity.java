@@ -10,6 +10,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,7 +37,7 @@ public class LoginActivity extends ActivityBase {
 
     private Button mLoginBTN;//登录
     private Button mLoginRegister;//注册
-    private ImageView mLoginBack; //返回
+    private RelativeLayout mLoginBack; //返回
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +56,7 @@ public class LoginActivity extends ActivityBase {
 
         mLoginBTN = (Button) findViewById(R.id.login__login_btn);
         mLoginRegister = (Button) findViewById(R.id.login__register);
-        mLoginBack = (ImageView) findViewById(R.id.login__back);
+        mLoginBack = (RelativeLayout) findViewById(R.id.common__back);
 
            /* 设置监听*/
         mLoginForgetPWD.setOnClickListener(this);
@@ -142,7 +143,7 @@ public class LoginActivity extends ActivityBase {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.login__back:
+            case R.id.common__back:
                 finish();
                 break;
             case R.id.login__login_btn:
