@@ -18,13 +18,13 @@ public abstract class ActivityBase extends AppCompatActivity implements View.OnC
     @Override
     public void startActivity(Intent intent) {
         super.startActivity(intent);
-        this.overridePendingTransition(R.anim.app__base_activity_next_zoom_in, R.anim.app__base_activity_next_zoom_out);
+//        this.overridePendingTransition(R.anim.app__base_activity_next_zoom_in, R.anim.app__base_activity_next_zoom_out);
     }
 
     @Override
     public void finish() {
         super.finish();
-        this.overridePendingTransition(R.anim.app__base_activity_back_zoom_in, R.anim.app__base_activity_back_zoom_out);
+//        this.overridePendingTransition(R.anim.app__base_activity_back_zoom_in, R.anim.app__base_activity_back_zoom_out);
     }
 
     public void finishWithoutAnimation() {
